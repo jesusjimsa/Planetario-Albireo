@@ -1,0 +1,19 @@
+@font-face{
+	font-family: FuturaStdLight;
+    src: url(Futura\ Std\ Light/Futura\ Std\ Light.otf);
+}
+
+/*
+	This next rule affects the entire webpage
+*/
+*{
+	font-family: FuturaStdLight;
+}
+
+.logo{
+	width: 100%;
+	max-width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
