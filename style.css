@@ -17,6 +17,11 @@
 	font-family: FuturaStdLight;
 }
 
+body{
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .logo{
 	width: 100%;
 	max-width: 500px;
@@ -25,6 +30,7 @@
 	margin-right: auto;
 }
 
+/***************************** Main content style *******************************/
 .main_text{
 	float: left;
 	background-color: rgba(221, 221, 221, 0.603);
@@ -46,6 +52,9 @@
 	padding: 10px;
 }
 
+/***************************** Main content style *******************************/
+/***************************** Sidebar style *******************************/
+
 .sidebar{
 	float: right;
 	background-color: rgba(221, 221, 221, 0.603);
@@ -66,21 +75,50 @@
 	margin-right: auto;
 	padding: 10px;
 }
+/***************************** Sidebar style *******************************/
+/***************************** Navigation bar style *******************************/
 
-.navigation {
+.nav_header{
+	border: 0;
+	border-collapse: collapse;
 	background-color: #112948;
+	height: 70px;
+	margin-bottom: 20px;
 }
 
-.navigation ul{
+.nav_header .nav_list{
 	list-style-type: none;
-	background-color: #112948;
+	padding-left: 0;
+	height: 100%;
 }
 
-.navigation ul li a{
+.nav_header .nav_list .nav_container{
+	height: 100%;
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_header .nav_list .nav_container .nav_page{
+	padding: 10px;
+	float: left;
+	text-align: center;
+	height: 71%;
+	width: 18%;
+	margin: auto;
+}
+
+.nav_header .nav_list .nav_container .nav_page .nav_text{
 	color: #F39B31;
+	font-size: 23px;
 	text-decoration: none;
+	position: relative;
+	top: 10px;
 }
 
-.navigation ul li:hover{
+.nav_header .nav_list .nav_container .nav_page:hover{
 	background-color: #3797CE;
 }
+
+/***************************** Navigation bar style *******************************/
