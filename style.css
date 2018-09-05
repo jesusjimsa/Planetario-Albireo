@@ -1,3 +1,10 @@
+/*
+	Colours:
+		- #112948
+		- #F39B31
+		- #3797CE
+*/
+
 @font-face{
 	font-family: FuturaStdLight;
     src: url(Futura\ Std\ Light/Futura\ Std\ Light.otf);
@@ -16,4 +23,64 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.main_text{
+	float: left;
+	background-color: rgba(221, 221, 221, 0.603);
+	border-radius: 10px;
+	width: 70%;
+	position: relative;
+	left: 20px;
+	padding: 5px;
+	margin-bottom: 15px;
+	/* margin-right: 10px; */
+}
+
+.main_text img{
+	width: 90%;
+	max-width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+.sidebar{
+	float: right;
+	background-color: rgba(221, 221, 221, 0.603);
+	border-radius: 10px;
+	width: 23%;
+	position: relative;
+	right: 20px;
+	padding: 10px;
+	margin-bottom: 15px;
+	/* margin-left: 10px; */
+}
+
+.sidebar img{
+	width: 90%;
+	max-width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+.navigation {
+	background-color: #112948;
+}
+
+.navigation ul{
+	list-style-type: none;
+	background-color: #112948;
+}
+
+.navigation ul li a{
+	color: #F39B31;
+	text-decoration: none;
+}
+
+.navigation ul li:hover{
+	background-color: #3797CE;
 }
