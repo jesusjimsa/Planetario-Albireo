@@ -17,6 +17,10 @@
 	font-family: FuturaStdLight;
 }
 
+p{
+	font-size: 18px;
+}
+
 body{
 	margin-left: 0;
 	margin-right: 0;
@@ -50,6 +54,11 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
+	border-radius: 20px;
+}
+
+.main_text #bold{
+	font-weight: bold;
 }
 
 /***************************** Main content style *******************************/
@@ -75,6 +84,7 @@ body{
 	margin-right: auto;
 	padding: 10px;
 }
+
 /***************************** Sidebar style *******************************/
 /***************************** Navigation bar style *******************************/
 
@@ -109,7 +119,25 @@ body{
 	margin: auto;
 }
 
+.nav_header .nav_list .nav_container .nav_current{
+	padding: 10px;
+	float: left;
+	text-align: center;
+	height: 71%;
+	width: 18%;
+	margin: auto;
+	background-color: #3797CE;
+}
+
 .nav_header .nav_list .nav_container .nav_page .nav_text{
+	color: #F39B31;
+	font-size: 23px;
+	text-decoration: none;
+	position: relative;
+	top: 10px;
+}
+
+.nav_header .nav_list .nav_container .nav_current .nav_text{
 	color: #F39B31;
 	font-size: 23px;
 	text-decoration: none;
