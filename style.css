@@ -61,6 +61,11 @@ body{
 	font-weight: bold;
 }
 
+.main_text h1 a{
+	text-decoration: none;
+	color: black;
+}
+
 /***************************** Main content style *******************************/
 /***************************** Sidebar style *******************************/
 
