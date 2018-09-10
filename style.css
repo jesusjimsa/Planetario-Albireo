@@ -117,12 +117,13 @@ body{
 	border-collapse: collapse;
 	background-color: #112948;
 	height: 70px;
-	margin-bottom: 20px;
+	margin-bottom: 0;
 }
 
 .nav_header .nav_list{
 	list-style-type: none;
 	padding-left: 0;
+	margin-bottom: 0;
 	height: 100%;
 }
 
@@ -187,6 +188,35 @@ body{
 
 .contacto a:hover{
 	text-decoration: underline;
+}
+
+/***************************** Contact style *******************************/
+/***************************** Contact style *******************************/
+
+.banner{
+	position: relative;
+	overflow: hidden;
+	margin-top: 0;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.banner .banner_text{
+	z-index: 9;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	color: #ffffff;
+	font-size: 64px;
+}
+
+.banner .banner_image{
+	z-index: -1;
+}
+
+.banner .banner_image img{
+	height: auto;
+	width: 100%;
 }
 
 /***************************** Contact style *******************************/
