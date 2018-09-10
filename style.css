@@ -204,8 +204,8 @@ body{
 .banner .banner_text{
 	z-index: 9;
 	position: absolute;
-	top: 50%;
-	left: 10%;
+	top: 45%;
+	left: 5%;
 	color: #ffffff;
 	font-size: 64px;
 }
