@@ -223,9 +223,8 @@ body{
 /***************************** Album style *******************************/
 
 .imgur-embed-pub{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+	position: relative;
+	left: 30%;
 }
 
 /***************************** Album style *******************************/
