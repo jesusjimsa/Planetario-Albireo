@@ -21,10 +21,13 @@ p{
 	font-size: 18px;
 }
 
-body{
+html, body{
+	width: 100%;
+    height: 100%;
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
+	overflow-x: hidden; 
 }
 
 .logo{
@@ -135,11 +138,13 @@ body{
 		padding: 10px;
 		margin-bottom: 15px;
 		overflow: auto;
+		overflow-x: hidden;
 	}
 
 	.sidebar iframe{
 		position: relative;
 		left: 32%;
+		margin-right: 0;
 	}
 
 	.sidebar .press h2 a{
@@ -328,9 +333,12 @@ footer .british_full a img{
 
 @media only screen and (max-width: 1112px){
 	.nav_header .nav_list #nav_container{
-		width: 100%;
+		width: 97%;
 		position: relative;
-		top: 25%;
+		top: 32%;
+		right: 1.5%;
+		margin-left: auto;
+		margin-right: auto;
 		display: none;
 	}
 	.nav_header .nav_list #nav_container .nav_page{
@@ -357,7 +365,7 @@ footer .british_full a img{
 		display: block;
 		position: relative;
 		top: 20%;
-		left: 90%;
+		left: 80%;
 	}
 
 	.nav_header .nav_list .nav_icon img{
