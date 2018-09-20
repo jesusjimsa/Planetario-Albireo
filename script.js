@@ -1,7 +1,7 @@
 function showResponsiveMenu(){
 	var menu = document.getElementById("nav_container");
 
-    if (menu.style.display === "none") {
+    if (menu.style.display != "block") {
         menu.style.display = "block";
     } else {
         menu.style.display = "none";
