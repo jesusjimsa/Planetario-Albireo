@@ -416,6 +416,12 @@ footer .british_full a img{
 	width: 100%;
 }
 
+@media only screen and (max-width: 1112px){
+	.banner .banner_text{
+		font-size: 12vmin;
+	}
+}
+
 /***************************** Banner style *******************************/
 /***************************** Album style *******************************/
 
