@@ -9,10 +9,17 @@
 	<link rel="shortcut icon" href="img/Favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-	<script src="script.js"></script>
 </head>
 
 <header>
+	<div id="fb-root"></div>
+	<script>(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 	<img class="logo" src="img/logoAlbireo_sinfondo.jpg" alt="Logo Albireo" title="Planetario Albireo" onclick="backToIndex();">
 	<nav class="nav_header">
 		<ul class="nav_list">
@@ -106,14 +113,19 @@
 		<h2>
 			Entra en el planetario
 		</h2>
-		<iframe height="200" src="https://www.youtube-nocookie.com/embed/a_b4vFio2rw?rel=0" frameborder="0"
-		 allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe height="200" src="https://www.youtube-nocookie.com/embed/a_b4vFio2rw?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+		 allowfullscreen></iframe>
 		<h2>
 			Planetario Albireo en Facebook
 		</h2>
-		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fplanetarioalbireo&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+		<!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fplanetarioalbireo&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
 		 width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-		 allow="encrypted-media"></iframe>
+		 allow="encrypted-media"></iframe> -->
+		<div class="fb-page" data-href="https://www.facebook.com/planetarioalbireo" data-tabs="timeline" data-small-header="false"
+		 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+			<blockquote cite="https://www.facebook.com/planetarioalbireo" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/planetarioalbireo">Planetario
+					Albireo</a></blockquote>
+		</div>
 		<div class="press">
 			<h2>
 				<a href="prensa.html">Artículos sobre Planetario Albireo</a>
@@ -129,9 +141,11 @@
 				Facebook
 			</h2>
 			<hr>
-			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fplanetarioalbireo&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
-			 width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-			 allow="encrypted-media"></iframe>
+			<div class="fb-page" data-href="https://www.facebook.com/planetarioalbireo" data-tabs="timeline" data-small-header="false"
+			 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+				<blockquote cite="https://www.facebook.com/planetarioalbireo" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/planetarioalbireo">Planetario
+						Albireo</a></blockquote>
+			</div>
 		</div>
 		<div class="contact">
 			<h2>
@@ -165,6 +179,7 @@
 	<div class="creditos">
 		Página web diseñada por <a href="https://www.linkedin.com/in/jesusjimsa/">Jesús Jiménez Sánchez</a>.
 	</div>
+	<script src="script.js"></script>
 </body>
 
 </html>
