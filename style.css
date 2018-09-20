@@ -72,20 +72,33 @@ body{
 	font-size: 18px;
 }
 
+@media only screen and (max-width: 1112px){
+	.main_text{
+		/* float: left; */
+		background-color: rgba(221, 221, 221, 0.603);
+		border-radius: 10px;
+		width: 90%;
+		position: relative;
+		left: 4.5%;
+		padding: 10px;
+		margin-bottom: 15px;
+		overflow: auto;
+	}
+}
+
 /***************************** Main content style *******************************/
 /***************************** Sidebar style *******************************/
 
 .sidebar{
-	float: right;
+	float: left;
 	background-color: rgba(221, 221, 221, 0.603);
 	border-radius: 10px;
 	width: 23%;
 	position: relative;
-	right: 20px;
+	left: 3%;
 	padding: 10px;
 	margin-bottom: 15px;
 	overflow: auto;
-	/* margin-left: 10px; */
 }
 
 .sidebar img{
@@ -110,6 +123,49 @@ body{
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+@media only screen and (max-width: 1112px){
+	.sidebar{
+		background-color: rgba(221, 221, 221, 0.603);
+		border-radius: 10px;
+		width: 90%;
+		position: relative;
+		left: 4.4%;
+		padding: 10px;
+		margin-bottom: 15px;
+		overflow: auto;
+	}
+
+	.sidebar iframe{
+		position: relative;
+		left: 32%;
+	}
+
+	.sidebar .press h2 a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.sidebar .press h2:hover a{
+		text-decoration: underline;
+	}
+
+	.sidebar .press img{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 414px){
+	.sidebar iframe{
+		position: relative;
+		left: 0;
+	}
 }
 
 /***************************** Sidebar style *******************************/
@@ -191,6 +247,16 @@ footer .british_full a img{
 	text-decoration: underline;
 }
 
+@media only screen and (max-width: 1112px){
+	footer{
+		display: none;
+	}
+
+	.creditos{
+		display: none;
+	}
+}
+
 /***************************** Footer style *******************************/
 /***************************** Navigation bar style *******************************/
 
@@ -209,7 +275,7 @@ footer .british_full a img{
 	height: 100%;
 }
 
-.nav_header .nav_list .nav_container{
+.nav_header .nav_list #nav_container{
 	height: 100%;
 	width: 90%;
 	display: block;
@@ -217,7 +283,7 @@ footer .british_full a img{
 	margin-right: auto;
 }
 
-.nav_header .nav_list .nav_container .nav_page{
+.nav_header .nav_list #nav_container .nav_page{
 	padding: 10px;
 	float: left;
 	text-align: center;
@@ -226,7 +292,7 @@ footer .british_full a img{
 	margin: auto;
 }
 
-.nav_header .nav_list .nav_container .nav_current{
+.nav_header .nav_list #nav_container .nav_current{
 	padding: 10px;
 	float: left;
 	text-align: center;
@@ -236,7 +302,11 @@ footer .british_full a img{
 	background-color: #3797CE;
 }
 
-.nav_header .nav_list .nav_container .nav_page .nav_text{
+.nav_header .nav_list .nav_icon{
+	display: none;
+}
+
+.nav_header .nav_list #nav_container .nav_page .nav_text{
 	color: #F39B31;
 	font-size: 23px;
 	text-decoration: none;
@@ -244,7 +314,7 @@ footer .british_full a img{
 	top: 10px;
 }
 
-.nav_header .nav_list .nav_container .nav_current .nav_text{
+.nav_header .nav_list #nav_container .nav_current .nav_text{
 	color: #F39B31;
 	font-size: 23px;
 	text-decoration: none;
@@ -252,8 +322,47 @@ footer .british_full a img{
 	top: 10px;
 }
 
-.nav_header .nav_list .nav_container .nav_page:hover{
+.nav_header .nav_list #nav_container .nav_page:hover{
 	background-color: #3797CE;
+}
+
+@media only screen and (max-width: 1112px){
+	.nav_header .nav_list #nav_container{
+		width: 100%;
+		position: relative;
+		top: 25%;
+		display: none;
+	}
+	.nav_header .nav_list #nav_container .nav_page{
+		padding: 10px;
+		/* float: left; */
+		background-color: #112948;
+		text-align: center;
+		height: 71%;
+		width: 100%;
+		margin: auto;
+	}
+
+	.nav_header .nav_list #nav_container .nav_current{
+		padding: 10px;
+		/* float: left; */
+		text-align: center;
+		height: 71%;
+		width: 100%;
+		margin: auto;
+		background-color: #3797CE;
+	}
+
+	.nav_header .nav_list .nav_icon{
+		display: block;
+		position: relative;
+		top: 20%;
+		left: 90%;
+	}
+
+	.nav_header .nav_list .nav_icon img{
+		width: 50px;
+	}
 }
 
 /***************************** Navigation bar style *******************************/
@@ -304,7 +413,7 @@ footer .british_full a img{
 /***************************** Banner style *******************************/
 /***************************** Album style *******************************/
 
-.imgur-embed-pub{
+blockquote{
 	position: relative;
 	left: 30%;
 }

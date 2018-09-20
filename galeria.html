@@ -13,10 +13,13 @@
 </head>
 
 <header>
-	<img class="logo" src="img/logoAlbireo_sinfondo.jpg" alt="Logo Albireo" title="Planetario Albireo">
+	<img class="logo" src="img/logoAlbireo_sinfondo.jpg" alt="Logo Albireo" title="Planetario Albireo" onclick="backToIndex();">
 	<nav class="nav_header">
 		<ul class="nav_list">
-			<div class="nav_container">
+			<li class="nav_icon" onclick="showResponsiveMenu();">
+				<img src="img/menu-icon.png" alt="Menu icon">
+			</li>
+			<div id="nav_container">
 				<a href="index.html">
 					<li class="nav_page">
 						<div class="nav_text">Inicio</div>
