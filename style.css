@@ -5,7 +5,7 @@
 		- #3797CE
 */
 
-@font-face{
+@font-face {
 	font-family: FuturaStdLight;
     src: url(Futura\ Std\ Light/Futura\ Std\ Light.otf);
 }
@@ -13,21 +13,21 @@
 /*
 	This next rule affects the entire webpage
 */
-*{
+* {
 	font-family: FuturaStdLight;
 }
 
-p{
+p {
 	font-size: 18px;
 }
 
-html, body{
+html, body {
 	width: 100%;
     height: 100%;
 	margin: 0;
 }
 
-.logo{
+.logo {
 	width: 100%;
 	max-width: 500px;
 	display: block;
@@ -36,7 +36,7 @@ html, body{
 }
 
 /***************************** Main content style *******************************/
-.main_text{
+.main_text {
 	float: left;
 	background-color: rgba(221, 221, 221, 0.603);
 	border-radius: 10px;
@@ -49,7 +49,7 @@ html, body{
 	/* margin-right: 10px; */
 }
 
-.main_text img{
+.main_text img {
 	width: 90%;
 	max-width: 500px;
 	display: block;
@@ -59,21 +59,21 @@ html, body{
 	border-radius: 20px;
 }
 
-.main_text #bold{
+.main_text #bold {
 	font-weight: bold;
 }
 
-.main_text h1 a{
+.main_text h1 a {
 	text-decoration: none;
 	color: black;
 }
 
-.main_text ul{
+.main_text ul {
 	font-size: 18px;
 }
 
-@media only screen and (max-width: 1112px){
-	.main_text{
+@media only screen and (max-width: 1112px) {
+	.main_text {
 		/* float: left; */
 		background-color: rgba(221, 221, 221, 0.603);
 		border-radius: 10px;
@@ -89,7 +89,7 @@ html, body{
 /***************************** Main content style *******************************/
 /***************************** Sidebar style *******************************/
 
-.sidebar{
+.sidebar {
 	float: left;
 	background-color: rgba(221, 221, 221, 0.603);
 	border-radius: 10px;
@@ -101,7 +101,7 @@ html, body{
 	overflow: auto;
 }
 
-.sidebar img{
+.sidebar img {
 	width: 90%;
 	max-width: 500px;
 	display: block;
@@ -110,23 +110,48 @@ html, body{
 	padding: 10px;
 }
 
-.sidebar .press h2 a{
+.sidebar .press h2 a {
 	text-decoration: none;
 	color: black;
 }
 
-.sidebar .press h2:hover a{
+.sidebar .press h2:hover a {
 	text-decoration: underline;
 }
 
-.sidebar .press img{
+.sidebar .press img {
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-@media only screen and (max-width: 1112px){
-	.sidebar{
+.covid {
+	float: left;
+	border-radius: 10px;
+	width: 23%;
+	position: relative;
+	left: 3%;
+	padding: 10px;
+	margin-bottom: 15px;
+	overflow: auto;
+	background-image: url("https://raw.githubusercontent.com/jesusjimsa/Planetario-Albireo/d15557389c4e731444be081a2133e13ff23761be/img/covid-background.png");
+	background-color: #112948;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.covid p {
+	text-decoration: none;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 170%;
+	color: #F39B31;
+}
+
+@media only screen and (max-width: 1112px) {
+	.sidebar {
 		background-color: rgba(221, 221, 221, 0.603);
 		border-radius: 10px;
 		width: 90%;
@@ -138,22 +163,22 @@ html, body{
 		overflow-x: hidden;
 	}
 
-	.sidebar iframe{
+	.sidebar iframe {
 		position: relative;
 		left: 32%;
 		margin-right: 0;
 	}
 
-	.sidebar .press h2 a{
+	.sidebar .press h2 a {
 		text-decoration: none;
 		color: black;
 	}
-	
-	.sidebar .press h2:hover a{
+
+	.sidebar .press h2:hover a {
 		text-decoration: underline;
 	}
 
-	.sidebar .press img{
+	.sidebar .press img {
 		width: 100%;
 		margin: 0;
 		padding: 0;
@@ -161,10 +186,20 @@ html, body{
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.covid {
+		width: 90%;
+		position: relative;
+		left: 4.4%;
+		padding: 10px;
+		margin-bottom: 15px;
+		overflow: auto;
+		overflow-x: hidden;
+	}
 }
 
-@media only screen and (max-width: 414px){
-	.sidebar iframe{
+@media only screen and (max-width: 414px) {
+	.sidebar iframe {
 		position: relative;
 		left: 0;
 	}
@@ -173,7 +208,7 @@ html, body{
 /***************************** Sidebar style *******************************/
 /***************************** Footer style *******************************/
 
-footer{
+footer {
 	background-color: #111111;
 	color: #ffffff;
 	margin-bottom: 0;
@@ -182,7 +217,7 @@ footer{
 	width: 100%;
 }
 
-footer .facebook, footer .contact, footer .british_full{
+footer .facebook, footer .contact, footer .british_full {
 	float: left;
 	overflow: auto;
 	margin-left: 20px;
@@ -191,48 +226,48 @@ footer .facebook, footer .contact, footer .british_full{
 	text-align: center;
 }
 
-footer .facebook{
+footer .facebook {
 	margin-left: 5%;
 }
 
-footer .facebook h2, footer .contact h2, footer .british_full h2{
+footer .facebook h2, footer .contact h2, footer .british_full h2 {
 	margin-bottom: 0.5%;
 	text-align: left;
 }
 
-footer .facebook hr, footer .contact hr, footer .british_full hr{
+footer .facebook hr, footer .contact hr, footer .british_full hr {
 	/* width: 100%; */
 	height: 0.5%;
 	color: #eeeeee;
 }
 
-footer .contact a{
+footer .contact a {
 	color: #ffffff;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
-footer .contact a:hover{
+footer .contact a:hover {
 	text-decoration: underline;
 }
 
-footer .contact form input{
+footer .contact form input {
 	width: 70%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-footer .contact form button{
+footer .contact form button {
 	width: 50%;
 	height: 30px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-footer .british_full a img{
+footer .british_full a img {
 	width: 40%;
 }
 
-.creditos{
+.creditos {
 	background-color: #111111;
 	color: #fff;
 	padding-bottom: 5px;
@@ -240,21 +275,21 @@ footer .british_full a img{
 	text-align: center;
 }
 
-.creditos a{
+.creditos a {
 	text-decoration: none;
 	color: #fff;
 }
 
-.creditos a:hover{
+.creditos a:hover {
 	text-decoration: underline;
 }
 
-@media only screen and (max-width: 1112px){
-	footer{
+@media only screen and (max-width: 1112px) {
+	footer {
 		display: none;
 	}
 
-	.creditos{
+	.creditos {
 		display: none;
 	}
 }
@@ -262,7 +297,7 @@ footer .british_full a img{
 /***************************** Footer style *******************************/
 /***************************** Navigation bar style *******************************/
 
-.nav_header{
+.nav_header {
 	border: 0;
 	border-collapse: collapse;
 	background-color: #112948;
@@ -270,14 +305,14 @@ footer .british_full a img{
 	margin-bottom: 0;
 }
 
-.nav_header .nav_list{
+.nav_header .nav_list {
 	list-style-type: none;
 	padding-left: 0;
 	margin-bottom: 0;
 	height: 100%;
 }
 
-.nav_header .nav_list #nav_container{
+.nav_header .nav_list #nav_container {
 	height: 100%;
 	width: 90%;
 	display: block;
@@ -285,7 +320,7 @@ footer .british_full a img{
 	margin-right: auto;
 }
 
-.nav_header .nav_list #nav_container .nav_page{
+.nav_header .nav_list #nav_container .nav_page {
 	padding: 10px;
 	float: left;
 	text-align: center;
@@ -294,7 +329,7 @@ footer .british_full a img{
 	margin: auto;
 }
 
-.nav_header .nav_list #nav_container .nav_current{
+.nav_header .nav_list #nav_container .nav_current {
 	padding: 10px;
 	float: left;
 	text-align: center;
@@ -304,11 +339,11 @@ footer .british_full a img{
 	background-color: #3797CE;
 }
 
-.nav_header .nav_list .nav_icon{
+.nav_header .nav_list .nav_icon {
 	display: none;
 }
 
-.nav_header .nav_list #nav_container .nav_page .nav_text{
+.nav_header .nav_list #nav_container .nav_page .nav_text {
 	color: #F39B31;
 	font-size: 23px;
 	text-decoration: none;
@@ -316,7 +351,7 @@ footer .british_full a img{
 	top: 10px;
 }
 
-.nav_header .nav_list #nav_container .nav_current .nav_text{
+.nav_header .nav_list #nav_container .nav_current .nav_text {
 	color: #F39B31;
 	font-size: 23px;
 	text-decoration: none;
@@ -324,12 +359,12 @@ footer .british_full a img{
 	top: 10px;
 }
 
-.nav_header .nav_list #nav_container .nav_page:hover{
+.nav_header .nav_list #nav_container .nav_page:hover {
 	background-color: #3797CE;
 }
 
-@media only screen and (max-width: 1112px){
-	.nav_header .nav_list #nav_container{
+@media only screen and (max-width: 1112px) {
+	.nav_header .nav_list #nav_container {
 		width: 97%;
 		position: relative;
 		top: 32%;
@@ -338,7 +373,8 @@ footer .british_full a img{
 		margin-right: auto;
 		display: none;
 	}
-	.nav_header .nav_list #nav_container .nav_page{
+
+	.nav_header .nav_list #nav_container .nav_page {
 		padding: 10px;
 		/* float: left; */
 		background-color: #112948;
@@ -348,7 +384,7 @@ footer .british_full a img{
 		margin: auto;
 	}
 
-	.nav_header .nav_list #nav_container .nav_current{
+	.nav_header .nav_list #nav_container .nav_current {
 		padding: 10px;
 		/* float: left; */
 		text-align: center;
@@ -358,7 +394,7 @@ footer .british_full a img{
 		background-color: #3797CE;
 	}
 
-	.nav_header .nav_list .nav_icon{
+	.nav_header .nav_list .nav_icon {
 		display: block;
 		position: relative;
 		top: 20%;
@@ -366,7 +402,7 @@ footer .british_full a img{
 		width: 50px;
 	}
 
-	.nav_header .nav_list .nav_icon img{
+	.nav_header .nav_list .nav_icon img {
 		width: 50px;
 	}
 }
@@ -374,23 +410,23 @@ footer .british_full a img{
 /***************************** Navigation bar style *******************************/
 /***************************** Contact style *******************************/
 
-.contacto{
+.contacto {
 	text-align: center;
 }
 
-.contacto a{
+.contacto a {
 	color: black;
 	text-decoration: none;
 }
 
-.contacto a:hover{
+.contacto a:hover {
 	text-decoration: underline;
 }
 
 /***************************** Contact style *******************************/
 /***************************** Banner style *******************************/
 
-.banner{
+.banner {
 	position: relative;
 	overflow: hidden;
 	margin-top: 0;
@@ -398,7 +434,7 @@ footer .british_full a img{
 	width: 100%;
 }
 
-.banner .banner_text{
+.banner .banner_text {
 	z-index: 9;
 	position: absolute;
 	top: 45%;
@@ -407,17 +443,17 @@ footer .british_full a img{
 	font-size: 64px;
 }
 
-.banner .banner_image{
+.banner .banner_image {
 	z-index: -1;
 }
 
-.banner .banner_image img{
+.banner .banner_image img {
 	height: auto;
 	width: 100%;
 }
 
-@media only screen and (max-width: 1112px){
-	.banner .banner_text{
+@media only screen and (max-width: 1112px) {
+	.banner .banner_text {
 		font-size: 11vmin;
 	}
 }
@@ -425,7 +461,7 @@ footer .british_full a img{
 /***************************** Banner style *******************************/
 /***************************** Album style *******************************/
 
-blockquote{
+blockquote {
 	position: relative;
 	left: 30%;
 }
