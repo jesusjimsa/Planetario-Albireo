@@ -125,31 +125,6 @@ html, body {
 	padding: 0;
 }
 
-.covid {
-	float: left;
-	border-radius: 10px;
-	width: 23%;
-	position: relative;
-	left: 3%;
-	padding: 10px;
-	margin-bottom: 15px;
-	overflow: auto;
-	background-image: url("https://raw.githubusercontent.com/jesusjimsa/Planetario-Albireo/d15557389c4e731444be081a2133e13ff23761be/img/covid-background.png");
-	background-color: #112948;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-}
-
-.covid p {
-	text-decoration: none;
-	text-align: center;
-	font-weight: bolder;
-	font-size: 170%;
-	color: #F39B31;
-}
-
 @media only screen and (max-width: 1112px) {
 	.sidebar {
 		background-color: rgba(221, 221, 221, 0.603);
@@ -185,16 +160,6 @@ html, body {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	.covid {
-		width: 90%;
-		position: relative;
-		left: 4.4%;
-		padding: 10px;
-		margin-bottom: 15px;
-		overflow: auto;
-		overflow-x: hidden;
 	}
 }
 
