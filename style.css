@@ -432,4 +432,52 @@ blockquote {
 }
 
 /***************************** Album style *******************************/
+/***************************** Table style *******************************/
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+}
+
+@media only screen and (max-width: 1112px) {
+	table {
+		width: 60%;
+	}
+}
+
+/* Columns style */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Table header style */
+th {
+    background-color: #112948;
+    text-align: center;
+	color: #F39B31;
+}
+
+/* Second columns style */
+td:first-child {
+    text-align: left;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+/* Table foot */
+tfoot td {
+    border: none; /* Línea superior en el pie de la tabla */
+    text-align: left; /* Centrar el texto del pie */
+    font-style: italic; /* Aplicar cursiva al texto del pie */
+}
+/***************************** Table style *******************************/
 
