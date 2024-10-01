@@ -59,6 +59,14 @@ html, body {
 	border-radius: 20px;
 }
 
+.main_text video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border-radius: 20px;
+}
+
 .main_text #bold {
 	font-weight: bold;
 }
