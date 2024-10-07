@@ -35,9 +35,23 @@ html, body {
 	margin-right: auto;
 }
 
+/***************************** Content wrapper style *******************************/
+.content-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+@media only screen and (max-width: 1112px) {
+	.content-wrapper {
+	  flex-direction: column;
+	}
+}
+
 /***************************** Main content style *******************************/
 .main_text {
-	float: left;
+	flex: 1 1 70%;
 	background-color: rgba(221, 221, 221, 0.603);
 	border-radius: 10px;
 	width: 70%;
@@ -83,6 +97,7 @@ html, body {
 @media only screen and (max-width: 1112px) {
 	.main_text {
 		/* float: left; */
+		flex-basis: 100%;
 		background-color: rgba(221, 221, 221, 0.603);
 		border-radius: 10px;
 		width: 90%;
@@ -98,7 +113,7 @@ html, body {
 /***************************** Sidebar style *******************************/
 
 .sidebar {
-	float: left;
+	flex: 1 1 25%;
 	background-color: rgba(221, 221, 221, 0.603);
 	border-radius: 10px;
 	width: 23%;
@@ -135,6 +150,7 @@ html, body {
 
 @media only screen and (max-width: 1112px) {
 	.sidebar {
+		flex-basis: 100%;
 		background-color: rgba(221, 221, 221, 0.603);
 		border-radius: 10px;
 		width: 90%;
@@ -147,9 +163,8 @@ html, body {
 	}
 
 	.sidebar iframe {
-		position: relative;
-		left: 32%;
-		margin-right: 0;
+		display: block;
+    	margin: 0 auto;
 	}
 
 	.sidebar .press h2 a {
