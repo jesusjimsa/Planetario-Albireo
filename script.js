@@ -1,5 +1,5 @@
-function showResponsiveMenu(){
-	var menu = document.getElementById("nav_container");
+function showResponsiveMenu() {
+    var menu = document.getElementById("nav_container");
 
     if (menu.style.display != "block") {
         menu.style.display = "block";
@@ -8,6 +8,6 @@ function showResponsiveMenu(){
     }
 }
 
-function backToIndex(){
-	window.location.href = 'index.html';
+function backToIndex() {
+    window.location.href = 'index.html';
 }

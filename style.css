@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: FuturaStdLight;
-    src: url(Futura\ Std\ Light/Futura\ Std\ Light.otf);
+	src: url(Futura\ Std\ Light/Futura\ Std\ Light.otf);
 }
 
 /*
@@ -21,9 +21,10 @@ p {
 	font-size: 18px;
 }
 
-html, body {
+html,
+body {
 	width: 100%;
-    height: 100%;
+	height: 100%;
 	margin: 0;
 }
 
@@ -35,23 +36,9 @@ html, body {
 	margin-right: auto;
 }
 
-/***************************** Content wrapper style *******************************/
-.content-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 0 20px;
-}
-
-@media only screen and (max-width: 1112px) {
-	.content-wrapper {
-	  flex-direction: column;
-	}
-}
-
 /***************************** Main content style *******************************/
 .main_text {
-	flex: 1 1 70%;
+	float: left;
 	background-color: rgba(221, 221, 221, 0.603);
 	border-radius: 10px;
 	width: 70%;
@@ -113,7 +100,7 @@ html, body {
 /***************************** Sidebar style *******************************/
 
 .sidebar {
-	flex: 1 1 25%;
+	float: left;
 	background-color: rgba(221, 221, 221, 0.603);
 	border-radius: 10px;
 	width: 23%;
@@ -164,7 +151,7 @@ html, body {
 
 	.sidebar iframe {
 		display: block;
-    	margin: 0 auto;
+		margin: 0 auto;
 	}
 
 	.sidebar .press h2 a {
@@ -205,7 +192,9 @@ footer {
 	width: 100%;
 }
 
-footer .facebook, footer .contact, footer .british_full {
+footer .facebook,
+footer .contact,
+footer .british_full {
 	float: left;
 	overflow: auto;
 	margin-left: 20px;
@@ -218,12 +207,16 @@ footer .facebook {
 	margin-left: 5%;
 }
 
-footer .facebook h2, footer .contact h2, footer .british_full h2 {
+footer .facebook h2,
+footer .contact h2,
+footer .british_full h2 {
 	margin-bottom: 0.5%;
 	text-align: left;
 }
 
-footer .facebook hr, footer .contact hr, footer .british_full hr {
+footer .facebook hr,
+footer .contact hr,
+footer .british_full hr {
 	/* width: 100%; */
 	height: 0.5%;
 	color: #eeeeee;
