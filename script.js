@@ -67,16 +67,16 @@ if (acceptButton) {
 }
 
 // Check if consent has already been given on page load
-window.onload = function() {
+window.onload = function () {
     const consentGiven = localStorage.getItem('cookieConsentGiven');
     console.log("Checking cookie consent:", consentGiven);
     // If consent hasn't been given, show the banner by changing display style
     if (consentGiven !== 'true' && banner) {
-         banner.style.display = 'flex'; // Show the banner using flex display
-         console.log("Showing cookie banner.");
+        banner.style.display = 'flex'; // Show the banner using flex display
+        console.log("Showing cookie banner.");
     } else if (banner) {
-         // Ensure it remains hidden if consent was given
-         banner.style.display = 'none';
-         console.log("Cookie consent already given, banner remains hidden.");
+        // Ensure it remains hidden if consent was given
+        banner.style.display = 'none';
+        console.log("Cookie consent already given, banner remains hidden.");
     }
 };
