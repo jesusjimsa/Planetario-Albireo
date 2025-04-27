@@ -507,3 +507,53 @@ blockquote {
 }
 
 /***************************** Album style *******************************/
+/***************************** Cookies style *******************************/
+
+/* Styles for the Cookie Consent Banner */
+#cookieConsentBanner {
+	/* Positioning and Layout */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: none; /* Initially hidden, JS will change this to 'flex' */
+	align-items: center;
+	justify-content: center;
+	z-index: 50;
+
+	/* Appearance */
+	background-color: #112948; /* bg-cookie-banner-bg */
+	color: #F39B31; /* text-cookie-banner-text */
+	padding: 1rem; /* p-4 */
+	box-sizing: border-box; /* Include padding in width */
+}
+
+/* Style for the text span inside the banner */
+#cookieConsentBanner span {
+	margin-right: 1rem; /* mr-4 */
+	text-align: center;
+	 /* Apply left align on larger screens if needed */
+	 /* @media (min-width: 768px) { text-align: left; } */
+}
+
+/* Styles for the Accept Button */
+#acceptCookieButton {
+	/* Appearance */
+	background-color: #3797CE; /* bg-cookie-button-bg */
+	color: white; /* text-white */
+	font-weight: bold; /* font-bold */
+	padding: 0.5rem 1rem; /* py-2 px-4 */
+	border: none; /* Remove default border */
+	border-radius: 0.25rem; /* rounded */
+	cursor: pointer; /* Indicate it's clickable */
+
+	/* Transitions */
+	transition: background-color 0.3s ease; /* transition duration-300 */
+}
+
+/* Hover effect for the button */
+#acceptCookieButton:hover {
+	background-color: #2a80b9; /* Slightly darker shade for hover, similar to hover:bg-blue-600 */
+}
+
+/***************************** Cookies style *******************************/
