@@ -231,17 +231,29 @@
 		<h2>
 			La Luna de este mes
 		</h2>
-		<div id="CalendarioLunarTutiempo">
-			<a href="http://www.tutiempo.net">El Tiempo</a> | <a
-				href="http://www.tutiempo.net/luna/fases.htm">Calendario Fases
-				Lunares</a>
+		<div id="moon-calendar-widget">
+			<div class="moon-calendar-container">
+                <div class="moon-calendar-header">
+                    <button id="prevMonth" class="moon-nav-button">&lt; Anterior</button>
+                    <h2 id="currentMonthYear"></h2>
+                    <button id="nextMonth" class="moon-nav-button">Siguiente &gt;</button>
+                </div>
+
+                <div class="moon-weekdays">
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Miér</div>
+                    <div>Jue</div>
+                    <div>Vie</div>
+                    <div>Sáb</div>
+                    <div>Dom</div>
+                </div>
+
+                <div id="calendarGrid" class="moon-calendar-grid">
+                    </div>
+            </div>
+            </div>
 		</div>
-		<script type="text/javascript">
-			/* Ancho: 225; Alto: 321 */
-			var DatosCalendarioTutiempo = '1;1;1;1;0;10;N;000000;FFFFFF;FFFFFF';
-		</script>
-		<script type="text/javascript" src="http://www.tutiempo.net/TTapi/cal/fases_0_0"></script>
-	</div>
 	<footer>
 		<div class="facebook">
 			<h2>
