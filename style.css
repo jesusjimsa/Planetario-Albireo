@@ -578,3 +578,97 @@ blockquote {
 }
 
 /***************************** Cookies style *******************************/
+/***************************** Moon phase style *******************************/
+
+.moon-calendar-container {
+	max-width: 50rem; /* Equivalent to max-w-2xl */
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #112948; /* Equivalent to bg-gray-800 */
+	border-radius: 0.5rem; /* Equivalent to rounded-lg */
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
+	padding: 0.5rem; /* Equivalent to p-6 */
+	margin-top: 1rem; /* Added margin to separate from heading */
+}
+
+.moon-calendar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+}
+
+.moon-calendar-header h2 {
+	font-size: 1.25rem; /* Equivalent to text-xl */
+	font-weight: 600; /* Equivalent to font-semibold */
+	color: #E5E7EB; /* Ensure header text is visible on dark background */
+}
+
+.moon-nav-button {
+	padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
+	background-color: #3797CE; /* Equivalent to bg-gray-700 */
+	color: #D1D5DB; /* Equivalent to text-gray-200 */
+	border-radius: 0.375rem; /* Equivalent to rounded-md */
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.moon-nav-button:hover {
+	background-color: #2a78a4; /* Equivalent to hover:bg-gray-600 */
+}
+
+.moon-nav-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.5); /* Equivalent to focus:ring-2 focus:ring-gray-500 */
+}
+
+.moon-weekdays {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 0.5rem; /* Equivalent to gap-2 */
+	text-align: center;
+	font-size: 0.875rem; /* Equivalent to text-sm */
+	font-weight: 500; /* Equivalent to font-medium */
+	color: #9CA3AF; /* Equivalent to text-gray-400 */
+	margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.moon-calendar-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 0.5rem; /* Equivalent to gap-2 */
+}
+
+.moon-day-cell {
+	padding: -2.3rem; /*Reduced padding*/
+	border: 1px solid #374151; /* Equivalent to border border-gray-700 */
+	border-radius: 0.375rem; /* Equivalent to rounded-md */
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Centers items horizontally in a column */
+	justify-content: center; /* Centers items vertically in a column */
+	color: #D1D5DB; /* Equivalent to text-gray-300 */
+	min-height: 60px; /* Slightly increased minimum height */
+	/* min-width: 40px; */
+}
+
+.moon-day-cell .day-number {
+	font-size: 0.75rem; /* Slightly reduced font size */
+	font-weight: 700; /* Equivalent to font-bold */
+	margin-bottom: 0.1rem; /* Reduced margin */
+}
+
+/* Custom styles for the moon phase images */
+.moon-phase-image {
+	width: 100%; /* Make image width relative to container */
+	height: auto; /* Maintain aspect ratio */
+	max-width: 30px; /* Set a maximum width */
+	max-height: 30px; /* Set a maximum height */
+	object-fit: contain; /* Ensure image is contained without distortion */
+	/* Removed margin: 0 auto; relying on parent flexbox for centering */
+	display: block; /* Ensure image is block level */
+	padding-right: 50px;
+}
+
+/***************************** Moon phase style *******************************/
