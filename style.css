@@ -39,13 +39,20 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 100%;
 }
 
 body {
-  font-family: FuturaStdLight, sans-serif;
+  font-family: FuturaStdLight, system-ui, sans-serif;
   font-size: 18px;
-  background-color: var(--color-bg);
   color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+/* ── Site Header ────────────────────────────────────────────── */
+.site-header {
+  position: relative;
 }
 
 /* ── Navigation ─────────────────────────────────────────────── */
@@ -65,6 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .nav-brand img {
@@ -687,6 +695,10 @@ blockquote {
   font-size: 14px;
 }
 
+.press-article .read-more:hover {
+  color: var(--color-navy);
+}
+
 .press-article iframe {
   width: 100%;
   border-radius: 8px;
@@ -877,6 +889,7 @@ blockquote {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
 
   .footer-brand {
