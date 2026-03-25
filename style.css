@@ -76,7 +76,7 @@ body {
 }
 
 .nav-brand img {
-  height: 44px;
+  height: 58px;
   display: block;
 }
 
@@ -535,6 +535,15 @@ body {
   color: #D1D5DB;
   min-height: 52px;
   padding: 2px;
+}
+
+.moon-day-cell.moon-day-today {
+  border-color: var(--color-gold);
+  background: rgba(243, 155, 49, 0.15);
+}
+
+.moon-day-cell.moon-day-today .day-number {
+  color: var(--color-gold);
 }
 
 .moon-day-cell .day-number {

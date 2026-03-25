@@ -136,9 +136,18 @@ window.onload = function () {
             calendarGrid.appendChild(document.createElement('div'));
         }
 
+        var today = new Date();
+        var todayDay   = today.getDate();
+        var todayMonth = today.getMonth();
+        var todayYear  = today.getFullYear();
+
         for (var day = 1; day <= daysInMonth; day++) {
             var dayElement = document.createElement('div');
             dayElement.classList.add('moon-day-cell');
+
+            if (day === todayDay && month === todayMonth && year === todayYear) {
+                dayElement.classList.add('moon-day-today');
+            }
 
             var date = new Date(year, month, day);
             var phase = calculateMoonPhase(date);
