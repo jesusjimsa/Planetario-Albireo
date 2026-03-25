@@ -55,9 +55,27 @@ body {
   position: relative;
 }
 
+/* ── Logo Bar ───────────────────────────────────────────────── */
+.site-logo-bar {
+  background: var(--color-navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 24px;
+}
+
+.site-logo-bar a {
+  display: block;
+}
+
+.site-logo-bar img {
+  height: 120px;
+  display: block;
+}
+
 /* ── Navigation ─────────────────────────────────────────────── */
 .main-nav {
-  background: var(--color-navy);
+  background: var(--color-dark);
   position: sticky;
   top: 0;
   z-index: 200;
@@ -68,16 +86,12 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
-  height: 66px;
+  height: 56px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.nav-brand img {
-  height: 58px;
-  display: block;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
 }
 
 .nav-links {
@@ -125,6 +139,8 @@ body {
   border: none;
   cursor: pointer;
   width: 28px;
+  position: absolute;
+  right: 24px;
   padding: 0;
   align-items: center;
   justify-content: center;
@@ -907,7 +923,7 @@ blockquote {
   .nav-links {
     display: none;
     position: absolute;
-    top: 66px;
+    top: 56px;
     left: 0;
     right: 0;
     background: var(--color-navy);
