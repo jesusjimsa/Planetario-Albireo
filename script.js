@@ -84,6 +84,7 @@ window.onload = function () {
     var currentMonthYearHeader = document.getElementById('currentMonthYear');
     var prevMonthButton = document.getElementById('prevMonth');
     var nextMonthButton = document.getElementById('nextMonth');
+    var todayButton = document.getElementById('todayMonth');
 
     if (!calendarGrid || !currentMonthYearHeader || !prevMonthButton || !nextMonthButton) {
         return; // Not on observacion.html
@@ -167,6 +168,13 @@ window.onload = function () {
         currentDate.setMonth(currentDate.getMonth() + 1);
         renderCalendar();
     });
+
+    if (todayButton) {
+        todayButton.addEventListener('click', function () {
+            currentDate = new Date();
+            renderCalendar();
+        });
+    }
 
     renderCalendar();
 }());
