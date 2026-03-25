@@ -710,10 +710,15 @@ blockquote {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   gap: 48px;
   padding-bottom: 36px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand,
+.footer-col {
+  min-width: 0;
 }
 
 .footer-brand h3 {
@@ -776,6 +781,15 @@ blockquote {
 
 .footer-social {
   margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.footer-social iframe,
+.footer-social .fb-page,
+.footer-social .fb-page > span,
+.footer-social .fb-page > span > iframe {
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 .footer-bottom {
